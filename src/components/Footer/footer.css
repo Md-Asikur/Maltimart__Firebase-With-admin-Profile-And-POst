@@ -1,0 +1,256 @@
+/* #counters{
+   
+    background-color: black;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+   
+}
+#counters p{
+   margin-left: 80px;
+   color: aliceblue;
+  
+}
+#counters .count label{
+    display: block;
+   
+}
+input{
+   
+    border: 1px solid rgba(6,120,121,1);
+    width: 300px;
+    outline: none;
+   display: block;
+ margin-left: 50px;
+ border-radius: 10px;
+    
+}
+
+#counters .count ::placeholder{
+    font-size: 13px;
+    color: rgb(4, 0, 8);
+    
+   
+    
+}
+@media(max-width:768px){
+    #counters{
+    background-image:linear-gradient(36deg, rgba(6,120,121,1) 0%, rgba(17,12,93,1) 87%);
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#counters h1,p,input,h3{
+margin-top: 20px;
+}
+}
+ #link-f a svg{
+color: aliceblue;
+font-size: 1.4em;
+margin-right: 10px;
+transition: 0.5s ease;
+}
+#link-f a svg:hover{
+    color: crimson;
+    transform: scale(1.3); 
+}
+Register section
+
+#reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 850px;
+    width: 400px;
+    
+}
+#reg-red{
+    color: red;
+}
+@media(max-width:1120px){
+    #link-f {
+        margin-left: 80px;
+        font-size: 20px;
+    }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #080a0e;
+    padding: 70px 0;
+	
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+    transition: 0.6s linear;
+}
+.footer-col h4:hover::before{
+    width:100px;
+    height: 4px;
+    background-color: rgb(170, 7, 116);
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+   
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fdfbfd;
+	transition: all 0.5s linear;
+     
+}
+.footer-col .social-links a:nth-child(1){
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fdfbfd;
+	transition: all 0.5s linear;
+     animation: anim1 30s linear infinite;
+}
+@keyframes anim1{
+  100%{
+transform: rotate(119860deg)scale(1.3);
+color: rgb(250, 249, 249);
+background-color: #4304b8;
+
+    }
+   
+}
+.footer-col .social-links a:nth-child(1):hover{
+    animation: none;
+}
+.footer-col .social-links a:nth-child(3){
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fdfbfd;
+	transition: all 0.5s linear;
+     animation: anim 20s linear infinite;
+}
+@keyframes anim{
+  100%{
+transform: rotate(19860deg)scale(1.3);
+color: rgb(12, 185, 6);
+
+    }
+   
+}
+.footer-col .social-links a:nth-child(3):hover{
+    animation: none;
+}
+.footer-col .social-links a:hover{
+	color: #fdfdfd;
+	background-color: #086aeb;
+    margin-left: 10px;
+    transform: scale(1.3);
+     transform: rotate(360deg);
+   
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+#copy-text{
+    background-color:#080a0e ;
+    position: absolute;
+    left: 25%;
+		color: #bbbbbb;
+   
+}
+@media(max-width: 574px){
+  #copy-text{
+   
+    position: absolute;
+    left: 5%;
+		
+   
+}
+}
+
